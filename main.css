@@ -1,5 +1,5 @@
 :root {
-    --header-color: #01a3a4;
+    --header-color: #5b01a4;
     --bg-color: #eee;
 }
 
@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: var(--bg-color);;
+    background-color: rgb(229, 229, 229) !important;
 }
 
 .container {
@@ -41,11 +41,14 @@ header .container {
 
 .profile-name {
     font-size: 2em;
+    color: #410275;
+    font-weight: bold;
 }
 
 .profile-username {
     margin: 16px 0 32px;
     font-size: 1.1em;
+    color: #410275;
 }
 
 .profile-link {
@@ -55,11 +58,17 @@ header .container {
     display: inline-block;
     margin-top: 24px;
     text-decoration: none;
+    border-radius: 6px;
+}
+
+.profile-link:hover {
+    background-color: #410275;
 }
 
 .numbers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    color: #410275;
 }
 
 .numbers-item {
