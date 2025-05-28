@@ -22,4 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         linkElement.href = json.html_url
     })
 
+    .catch(function(error) {
+        console.error('Erro ao buscar dados do GitHub:', error)
+        errorElement.innerText = 'Não foi possível carregar os dados do GitHub. Tente novamente mais tarde.'
+    })
+
 })
